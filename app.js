@@ -2,8 +2,11 @@
 
 function makeMultipleGrid(row,col){
 
+    let penColor = 'black'; // Default pen color
+
     function startDrawing() {
-        this.style.backgroundColor = 'red';
+        
+        this.style.backgroundColor = penColor;
     }
 
     function eraseDrawing() {
@@ -21,28 +24,36 @@ function makeMultipleGrid(row,col){
         grid.addEventListener('mouseover', eraseDrawing);
     }
 
+    const penButton=document.querySelector('.pen-button');
+    const penOptions=document.querySelector('.pen-options');
+    const penColors=document.querySelectorAll('.pen-color');
 
-    function clearBox() {
-        const allGrid = document.querySelectorAll('.grid');
-        allGrid.forEach((grid) => {
-            grid.style.backgroundColor = 'white';
-            grid.removeEventListener('mouseover',startDrawing);
-        });
-        
-    }
-
-    const pen = document.querySelector('.pen-button');
+    penButton.addEventListener('click', function(){
+        //apply default pen of black color
+        applyPen();
+        //toggle visibility of pen color buttons
+        if(penOptions.style.display === 'none' || penOptions.style.display === ''){
+            penOptions.style.display='grid';
+        }
+        else {
+            penOptions.style.display='none';
+        }
+    });
 
     function applyPen() {
-        container.querySelectorAll('.grid').forEach((grid) => {
+       container.querySelectorAll('.grid').forEach((grid)=> {
             grid.removeEventListener('mouseover', eraseDrawing);
             grid.addEventListener('mouseover', startDrawing);
-        });
+       })
     }
-
-    pen.addEventListener('click', applyPen);
-
-    const eraser = document.querySelector('.eraser-button');
+    
+    penColors.forEach((colorButton) => {
+        colorButton.addEventListener('click',function(){
+            const colorClassName= this.classList[1];
+            penColor=colorClassName;
+            applyPen();
+        });
+    });
 
     function applyEraser() {
         container.querySelectorAll('.grid').forEach((grid) => {
@@ -50,7 +61,16 @@ function makeMultipleGrid(row,col){
             grid.addEventListener('mouseover', eraseDrawing);
         });
     }
+    const eraser = document.querySelector('.eraser-button');
     eraser.addEventListener('click', applyEraser);
+
+    function clearBox() {
+        const allGrid = document.querySelectorAll('.grid');
+        allGrid.forEach((grid) => {
+            grid.style.backgroundColor = 'white';
+            grid.removeEventListener('mouseover',startDrawing);
+        });
+    }
 
     const clear = document.querySelector('.clear-button');
     clear.addEventListener('click', clearBox);

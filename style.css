@@ -1,7 +1,9 @@
 body,html{
     margin: 0;
     height: 100%;
-    
+    display: flex;
+    flex-direction: column;
+
 }
 .header{
     text-align: center;
@@ -15,6 +17,9 @@ body,html{
     background-color: #3498db;
     text-align: center;
     padding: 10px 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 .flex-container{
     display: flex;
@@ -23,6 +28,7 @@ body,html{
     height: 100vh;
     flex-wrap: wrap;
     margin-top: -10px;
+    flex: 1;
 }
 
 .container{
@@ -63,5 +69,35 @@ body,html{
 }
 button:hover {
     background-color: #2980b9;
+}
+
+.pen-options {
+    margin: 2rem 0;
+    gap: 5px;
+    display: none;
+    /* visibility: hidden; */
+    position: absolute;
+    top: 40px;
+    
+}
+.pen-options button{
+    cursor: pointer;
+    border-radius: 200%;
+}
+
+.pen-options .red{
+    background-color: red;
+}
+.pen-options .black{
+    background-color:black;
+}
+.pen-options .green{
+    background-color: green;
+}
+.pen-options .blue{
+    background-color: blue;
+}
+.pen-options .orange{
+    background-color: orange;
 }
 
