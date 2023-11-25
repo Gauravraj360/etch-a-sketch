@@ -27,17 +27,15 @@ body,html{
     align-items: center;
     height: 100vh;
     flex-wrap: wrap;
-    margin-top: -10px;
-    flex: 1;
 }
 
 .container{
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
+    width: 50%;
     /* Gap between grid items */
     max-width: 80%; /* Adjust maximum width of the container */
-    max-height: 80vh; /* Adjust maximum height of the container */
+    max-height: 70vh; /* Adjust maximum height of the container */
     border: 2px solid #ccc;
     overflow: auto; /* Enable scrolling if content exceeds the container's height */
 }
@@ -72,32 +70,9 @@ button:hover {
 }
 
 .pen-options {
-    margin: 2rem 0;
-    gap: 5px;
+    margin: 2rem ;
     display: none;
-    /* visibility: hidden; */
-    position: absolute;
-    top: 40px;
-    
-}
-.pen-options button{
-    cursor: pointer;
-    border-radius: 200%;
+        
 }
 
-.pen-options .red{
-    background-color: red;
-}
-.pen-options .black{
-    background-color:black;
-}
-.pen-options .green{
-    background-color: green;
-}
-.pen-options .blue{
-    background-color: blue;
-}
-.pen-options .orange{
-    background-color: orange;
-}
 

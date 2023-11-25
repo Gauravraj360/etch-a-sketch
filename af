@@ -1,0 +1,36 @@
+[33mcommit 2104791e2ed06bfb0823887fe8bbab4f1d144ed6[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: a68499f 6ed87ab
+Author: Gaurav Raj <gaurav.raj.1098@gmail.com>
+Date:   Tue Nov 21 23:47:22 2023 +0530
+
+    Merge branch 'main' of github.com:Gauravraj360/etch-a-sketch
+
+[33mcommit a68499fc359bfe3890f75d1fc5d8049e31e5029d[m
+Author: Gaurav Raj <gaurav.raj.1098@gmail.com>
+Date:   Tue Nov 21 23:46:05 2023 +0530
+
+    Added few functionality of  pen Color to sketch
+
+[33mcommit 6ed87ab1873ec0312df4b574c33bb42aaa94a8e2[m
+Author: Gauravraj360 <70471493+Gauravraj360@users.noreply.github.com>
+Date:   Sat Nov 18 23:20:33 2023 +0530
+
+    Update README.md
+
+[33mcommit 928e92442543c754ac10ea4f62641fdc12b0a451[m
+Author: Gaurav Raj <gaurav.raj.1098@gmail.com>
+Date:   Sat Nov 18 23:14:16 2023 +0530
+
+    initial commit
+
+[33mcommit d1973d6c730d16837b78d595ac5ca55cb5c0199e[m
+Author: Gaurav Raj <gaurav.raj.1098@gmail.com>
+Date:   Sat Nov 18 23:13:54 2023 +0530
+
+    intial commit
+
+[33mcommit 710010b96384f23dfcca336545c4752ab87d45fd[m
+Author: Gauravraj360 <70471493+Gauravraj360@users.noreply.github.com>
+Date:   Fri Nov 17 00:38:47 2023 +0530
+
+    Initial commit
